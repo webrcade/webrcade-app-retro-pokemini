@@ -9,12 +9,12 @@ import {
   EditorScreen,
   GamepadWhiteImage,
   KeyboardWhiteImage,
-  NesBackground,
   PauseScreenButton,
   Resources,
   SaveStatesEditor,
   SaveWhiteImage,
   SettingsAppWhiteImage,
+  PokeminiBackground,
   TEXT_IDS,
 } from '@webrcade/app-common';
 
@@ -142,7 +142,7 @@ export class EmulatorPauseScreen extends Component {
         ) : null}
         {mode === ModeEnum.STATE ? (
           <SaveStatesEditor
-            emptyImageSrc={NesBackground}
+            emptyImageSrc={PokeminiBackground}
             emulator={emulator}
             onClose={closeCallback}
             showStatusCallback={emulator.saveMessageCallback}
