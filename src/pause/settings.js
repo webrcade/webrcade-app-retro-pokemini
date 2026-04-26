@@ -58,7 +58,7 @@ export class PokeMiniSettingsEditor extends Component {
           <AppDisplaySettingsTab
             emulator={emulator}
             isBilinearMode={true}
-            isActive={tabIndex === 1}
+            isActive={tabIndex === 0}
             showOnScreenControls={showOnScreenControls}
             setFocusGridComps={setFocusGridComps}
             values={values}
@@ -74,7 +74,7 @@ export class PokeMiniSettingsEditor extends Component {
         <ShaderSettingsTab
           shaderService={this.shaderService}
           emulator={emulator}
-          isActive={tabIndex === 2}
+          isActive={tabIndex === 1}
           setFocusGridComps={setFocusGridComps}
           values={values}
           setValues={setValues}
