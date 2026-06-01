@@ -86,6 +86,10 @@ export class Emulator extends RetroAppWrapper {
     ).setDebug(this.debug);
   }
 
+  getHashFileExtension() {
+    return 'min';
+  }
+
   onFrame() {
     if (this.audioStarted !== -1) {
       if (this.audioStarted > 1) {
