@@ -171,6 +171,7 @@ export class EmulatorPauseScreen extends Component {
           <PokeMiniSettingsEditor
             emulator={emulator}
             onClose={closeCallback}
+            showOnScreenControls={true}
           />
         ) : null}
         {mode === ModeEnum.STATE ? (
